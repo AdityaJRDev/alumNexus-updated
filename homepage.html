@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="styles/homepage.css">
+      <link rel="stylesheet" href="styles/slider.css">
+      <link rel="stylesheet" href="styles/card-slider.css">
+      <link rel="stylesheet" href="styles/body.css">
+      <link rel="stylesheet" href="styles/footer.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>alumNexus</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="homepage.html" class="nav__logo">alumNexus</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="./discussion-forum/main_page/index.html" class="nav__link">Discussion forums</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="mentor.html" class="nav__link">Mentorship programs</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./chat/index.html" class="nav__link">Chat</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link"></a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Login button -->
+               <img src="imgs/card-slider/avatar-6.jpg" class="user-pic" onclick="toggleMenu()">
+               
+               <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                     <div class="user-info">
+                        <img src="imgs/card-slider/avatar-6.jpg">
+                        <h2>Aditya J R</h2>
+                     </div>
+                     <hr>
+
+                     <a href="#" class="sub-menu-link">
+                        <img src="profile-dropdown/profile.png">
+                        <p>Edit Profile</p>
+                        <span></span>
+                     </a>
+                     <a href="#" class="sub-menu-link">
+                        <img src="profile-dropdown/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span></span>
+                     </a>
+                     <a href="#" class="sub-menu-link">
+                        <img src="profile-dropdown/help.png">
+                        <p>Help & Support</p>
+                        <span></span>
+                     </a>
+                     <a href="#" class="sub-menu-link">
+                        <img src="profile-dropdown/logout.png">
+                        <p>Logout</p>
+                        <span></span>
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!-------Image silder------->
+      <div class="slider">
+         <div class="list">
+             <div class="item">
+                 <img src="img/slider/1.jpg" alt="">
+             </div>
+             <div class="item">
+                 <img src="img/slider/2.jpg" alt="">
+             </div>
+             <div class="item">
+                 <img src="img/slider/3.jpg" alt="">
+             </div>
+             <div class="item">
+                 <img src="img/slider/4.jpg" alt="">
+             </div>
+             <div class="item">
+                 <img src="img/slider/5.jpg" alt="">
+             </div>
+         </div>
+         <div class="buttons">
+             <button id="prev"><</button>
+             <button id="next">></button>
+         </div>
+         <ul class="dots">
+             <li class="active"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+     </div>
+     <br>
+
+     <!---card slider-->
+     <div class="wrapper">
+      <i class="fas fa-angle-left" id="left"></i>
+         <ul class="carousel">
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-1.png" alt="" draggable="false" />
+               </div>
+
+               <h2>Gokul</h2>
+               <span>Web Developer</span>
+            </li>
+
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-2.png" alt="" draggable="false" />
+               </div>
+
+               <h2>Dhinakar</h2>
+               <span>App Developer</span>
+            </li>
+
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-3.png" alt="" draggable="false" />
+               </div>
+
+               <h2>Dhivisha</h2>
+               <span>Photographer</span>
+            </li>
+
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-4.png" alt="" draggable="false" />
+               </div>
+
+               <h2>Elankavi</h2>
+               <span>Blogger</span>
+            </li>
+
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-5.png" alt="" draggable="false" />
+               </div>
+
+               <h2>Rahava</h2>
+               <span>Creator</span>
+            </li>
+
+            <li class="card">
+               <div class="img">
+               <img src="imgs/card-slider/avatar-6.jpg" alt="" draggable="false" />
+               </div>
+
+               <h2>Aditya</h2>
+               <span>Web Developer</span>
+            </li>
+         </ul>
+         <i class="fas fa-angle-right" id="right"></i>
+    </div>
+
+   <div class="container2">
+      <h1>Welcome to alumNexus</h1>
+      <p>Bridging Alumni and Students for a Brighter Future!</p>
+      <p>Our platform connects alumni and students, fostering meaningful interactions, mentorship, and professional growth.</p>
+
+      <div class="features">
+          <ul>
+              <li><strong>Networking Opportunities:</strong> Build valuable connections with alumni and peers.</li>
+              <li><strong>Mentorship Programs:</strong> Gain insights from experienced professionals in your field.</li>
+              <li><strong>Career Guidance:</strong> Get advice on job opportunities, internships, and industry trends.</li>
+              <li><strong>Knowledge Sharing:</strong> Engage in discussions, webinars, and workshops.</li>
+          </ul>
+      </div>
+      <br>
+      <a href="./discussion-forum/main_page/index.html" class="cta">Get Started</a>
+   </div>
+
+      <!----------------Footer--------------------->
+      <footer>
+         <div class="footer-container">
+             <div class="col-1">
+                 <img src="/logo.png" alt="">
+                 <p>"Connecting students and alumni for a brighter future." <br><br>
+                  "Empowering connections, fostering opportunities."
+                 </p>
+             </div>
+             <div class="col-2">
+                 <h3>Quick Links</h3>
+                 <ul>
+                     <li><a href="homepage.html">Home</a></li>
+                     <li><a href="discussion-forum/main_page/index.html">Discussion forum</a></li>
+                     <li><a href="mentor.html">Mentorship programs</a></li>
+                     <li><a href="./chat/index.html">Chat</a></li>
+                 </ul>
+             </div>
+             <div class="col-3">
+                 <h3>Made using</h3>
+                 <ul>
+                     <li><a href="#">HTML</a></li>
+                     <li><a href="#">CSS</a></li>
+                     <li><a href="#">JavaScript</a></li>
+                 </ul>
+             </div>
+             <div class="col-4">
+                 <h3>Newsletter</h3>
+                 <form>
+                     <i class="far fa-envelope"></i>
+                     <input type="email" placeholder="Enter your email" required>
+                     <button><i class="fas fa-arrow-right"></i></button>
+                 </form>
+                 <div class="social-icons">
+                  <a href="#" class="fa fa-google"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-youtube"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                 </div>
+             </div>
+         </div>
+         <div class="footer-2">
+             <p>© 2025 | Made by alumNexus</p>
+         </div>
+      </footer>
+
+      <script src="script/main.js"></script>
+      <script src="script/slider.js"></script>
+      <script src="script/card-slider.js"></script>
+      <script src="script/chatbot.js"></script>
+   </body>
+</html>

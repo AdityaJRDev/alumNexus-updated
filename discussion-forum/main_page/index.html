@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    
+    <title>Hello, world!</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-md navbar-light border-bottom p-0 ps-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-main-color fw-bold fs-3">Discussion forum</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <input class="form-control me-2 search-icon" type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <ul class="navbar-nav px-3 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img class="profile rounded-circle " src="../../imgs/card-slider/avatar-6.jpg">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg class="text-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>          
+                        </a>
+                    </li>
+
+                </ul>
+
+                  <div class="btn-group">
+                    <button id="button1" type="button" class="btn btn-sm bg-main-color fw-bold text-light">Add question</button>
+                    <button id="button2" type="button" class="btn btn-sm bg-main-color dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <!-- <button type="button" class="btn btn-sm bg-main-color fw-bold text-light rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Add question
+                    </button> -->
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  
+
+            </div>
+            
+        </div>
+    </nav>
+    <div class="bg-light pt-4">
+        <div class="container mb-5">
+            <div class="row">
+                    <div id="left-list" class="col-2 d-flex flex-column">
+                        <a class="bg-second-color" href="#">
+                            <span class="rounded ">+</span>
+                            <span>Create Space</span>
+                        </a>
+                        <a href="#">
+                            <span class="position-relative me-auto">
+                                <img src="../left-side/webdevv.avif">
+                                <span class="position-absolute top-0 start-50 translate-middle ms-2 p-1 bg-danger border border-light rounded-circle">
+                                    <span class="visually-hidden">New alerts</span>
+                                </span>
+                            </span>
+                            <span>Web Dev Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/Data-Analyst.jpg">
+                            <span>Data Analyst Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/cyber-security.webp">
+                            <span>Cyber Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/blockchain.png">
+                            <span>Blockchain Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/ui-ux.webp">
+                            <span>UI/UX Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/game-dev.jpg">
+                            <span>Game Dev Hub</span>
+                        </a>
+                        <a href="#">
+                            <img src="../left-side/devops.webp">
+                            <span>DevOps Hub</span>
+                        </a>
+
+                    </div>
+                    <div class="col-7">
+                        <div class="bg-white border-gray">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="profile rounded-circle " src="../../imgs/card-slider/avatar-6.jpg">
+                                    <input class="w-75 border-gray text-gray-dark rounded-pill bg-light ps-2 text-start" type="button" value="What do you want to ask or share?">
+                                </div>
+                            </div>
+                            <div class="row text-gray-darker pb-2 ps-4 pe-4">
+                                <div class="col text-center border-end hover-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 16h-4.83l-.59.59L12 20.17l-1.59-1.59-.58-.58H5V4h14v14zm-8-3h2v2h-2zm1-8c1.1 0 2 .9 2 2 0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4S8 6.79 8 9h2c0-1.1.9-2 2-2z"/></svg>
+                                    <span>Ask</span>
+                                </div>
+                                <div class="col text-center border-end hover-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><rect fill="none" height="24" width="24"/><path d="M3,10h11v2H3V10z M3,8h11V6H3V8z M3,16h7v-2H3V16z M18.01,12.87l0.71-0.71c0.39-0.39,1.02-0.39,1.41,0l0.71,0.71 c0.39,0.39,0.39,1.02,0,1.41l-0.71,0.71L18.01,12.87z M17.3,13.58l-5.3,5.3V21h2.12l5.3-5.3L17.3,13.58z"/></svg>
+                                    <span>Answer</span>
+                                </div>
+                                <div class="col text-center hover-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg>
+                                    <span>Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border-gray mt-4">
+                            <div class="d-flex pt-2">
+                                <div class="col d-flex">
+                                    <img class="post-profile rounded-circle " src="../../real-imgs/WhatsApp Image 2025-01-23 at 13.25.37_022bdfe8.jpg">
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold fs-6">Rahava Prasanna</span>
+                                        <span class="text-gray-darker fs-6">Data Analyst</span>
+                                    </div>
+                                </div>
+                                <div class="p-2 text-gray-darker">
+                                    <button class="btn rounded-circle hover-dark p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-body pt-2 ps-3">
+                                <div class="post-title fw-bold">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        Unlocking Insights: The Power of Data Analysis
+                                    </a>    
+                                </div>
+                                <div class="post-text pt-1">
+                                    <p>In today’s data-driven world, the role of a Data Analyst is more crucial than ever. From identifying trends to making informed business decisions, data analysis empowers organizations to stay ahead of the competition.
+                                    As data analysts, we dive deep into datasets, uncover hidden patterns, and translate numbers into actionable insights. Whether it's using tools like SQL, Python, or visualization platforms such as Tableau and Power BI, our goal is to drive strategic growth through data-backed decisions.
+                                    Remember, data is only valuable when it leads to action. Stay curious, keep analyzing, and let the numbers guide the way!</p>
+                                    <br>
+                                    <p><em>#DataAnalytics #DataDriven #BusinessIntelligence #SQL #Python #Tableau #DataVisualization</em></p>
+                                </div>
+                            </div>
+                            <div class="post-image pt-2">
+                                <img class="img-fluid" src="../right-side/what-is-data-analyst.jpg">
+                            </div>
+                            <div class="post-footer p-2">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="left-button post-button bg-second-color border-0 text-black p-1">
+                                        <img src="src/up.png" width="20" class="ms-2">
+                                        15
+                                    </button>
+                                    <button type="button" class="right-button post-button bg-second-color border-0 text-black p-1">
+                                        <img src="src/down.png" width="20" class="me-2">
+
+                                    </button>
+                                </div>
+                                <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
+                                    <img src="src/refresh.png" width="20" class="">
+                                    1
+                                </button>
+                                <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
+                                    <img src="src/comment.png" width="25" class="p-1">
+                                    123
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-white border-gray mt-4">
+                            <div class="d-flex pt-2">
+                                <div class="col d-flex">
+                                    <img class="post-profile rounded-circle " src="../../real-imgs/WhatsApp Image 2025-01-23 at 13.28.47_c47534f9.jpg">
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold fs-6">Dinakar</span>
+                                        <span class="text-gray-darker fs-6">Web Developer</span>
+                                    </div>
+                                </div>
+                                <div class="p-2 text-gray-darker">
+                                    <button class="btn rounded-circle hover-dark p-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="post-body pt-2 ps-3">
+                                <div class="post-title fw-bold">
+                                    <a class="text-decoration-none text-black" href="#">
+                                        Essential Web Development Skills for Success
+                                    </a>    
+                                </div>
+                                <div class="post-text pt-1">
+                                    <p>Web development is an ever-evolving field that demands a blend of technical expertise and creative problem-solving. Whether you're a beginner or an experienced developer, mastering the right skills is crucial to building efficient and user-friendly websites and applications.
+                                    <br>
+
+                                    <br>
+                                    Here are some key web development skills to focus on:
+                                    <br>
+                                    - HTML, CSS, and JavaScript: The foundation of every website. <br>
+                                    - Responsive Design: Ensuring seamless experiences across devices. <br>
+                                    - Frontend Frameworks: React, Angular, or Vue for dynamic interfaces. <br>
+                                    - Backend Development: Node.js, Python, or PHP for server-side logic. <br>
+                                    - Version Control: Git and GitHub to collaborate efficiently. <br>
+                                    - Performance Optimization: Speed matters for user experience and SEO. <br>
+                                    - Security Best Practices: Protecting websites from vulnerabilities. <br>
+                                    - Continuously learning and adapting to new technologies will keep you ahead in this fast-paced industry. <br>
+                                    <br>
+                                    What web development skill are you currently working on? Share in the comments!
+                                    </p>
+                                    <br>
+                                    
+                                    <p><em>#WebDevelopment #Frontend #Backend #Coding #Programming #TechSkills #DeveloperLife</em></p>
+                                </div>
+                            </div>
+                            <div class="post-image pt-2">
+                                <img class="img-fluid" src="../right-side/web-dev.jpg">
+                            </div>
+                            <div class="post-footer p-2">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="left-button post-button bg-second-color border-0 text-black p-1">
+                                        <img src="src/up.png" width="20" class="ms-2">
+                                        15
+                                    </button>
+                                    <button type="button" class="right-button post-button bg-second-color border-0 text-black p-1">
+                                        <img src="src/down.png" width="20" class="me-2">
+
+                                    </button>
+                                </div>
+                                <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
+                                    <img src="src/refresh.png" width="20" class="">
+                                    1
+                                </button>
+                                <button type="button" class="post-button post-button-bg border-0 rounded-circle text-black p-1">
+                                    <img src="src/comment.png" width="25" class="p-1">
+                                    123
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                    <div class="">
+                                        <img src="../left-side/webdevv.avif" width="20" height="20" class="rounded">
+                                    </div>
+                                    <div class="ps-2 lh-1">
+                                        <div class="fw-bold">Web development</div>
+                                        <div class="text-secondary fw-light">Responsive web development requires frontend, backend, optimization, framework, and deployment.</div>
+                                    </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                    <div class="">
+                                        <img src="../left-side/cyber-security.webp" width="20" height="20" class="rounded">
+                                    </div>
+                                    <div class="ps-2 lh-1">
+                                        <div class="fw-bold">Cyber Hub</div>
+                                        <div class="text-secondary fw-light">Secure web development requires encryption, authentication, authorization, firewall, monitoring, and updates.</div>
+                                    </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                    <div class="">
+                                        <img src="../left-side/ui-ux.webp" width="20" height="20" class="rounded">
+                                    </div>
+                                    <div class="ps-2 lh-1">
+                                        <div class="fw-bold">UI/UX Hub</div>
+                                        <div class="text-secondary fw-light">Effective web development demands usability, accessibility, responsiveness, consistency, navigation, and aesthetics.</div>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
